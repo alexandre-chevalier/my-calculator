@@ -1,5 +1,5 @@
 
-## fonction qui fait le calcul et retourne le resultat##
+## function who return the result##
 def calculator(n1, si, n2):
     if si == "+":
         result = n1 + n2
@@ -25,7 +25,7 @@ def display_result(result):
 def error():
         print("you enter the wrong sign, please enter the right sign")
         
-## fonction qui retorune les nombre au format int ou float en fonction du coix de l'utilisateur ##
+## function who return the number in integer or float depending on the user choice ##
 def number(Fl_Int):
     if Fl_Int == "float":
         while True:
@@ -35,7 +35,7 @@ def number(Fl_Int):
                 return number1, number2
                 break
             except ValueError:
-                print("veuillez entrez le bon caractere")
+                print("choose the right value, this input can take an integer or a float")
     elif Fl_Int == "int":
         while True:
             try:
@@ -84,7 +84,7 @@ def main():
     historik = []
     while True:
         fl_int= input("choose between int and float : int/float  ")
-        sign = input("enter th sign you want + - / * % : ")
+        sign = input("enter the sign you want + - / * % : ")
         
         if sign != "+" and sign != "-" and sign != "*" and sign != "/" and sign != "%":
             error()    
