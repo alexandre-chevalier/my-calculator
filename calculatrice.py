@@ -49,7 +49,7 @@ def number(Fl_Int):
 
         
 
-## fonction qui gere l'historique des operations ##
+## function who put the entire input in your history  ##
 def history(hystorique, num1, si, num2, res):
     
     his = f"{num1} {si} {num2} = {res}"
@@ -60,6 +60,7 @@ def history(hystorique, num1, si, num2, res):
         print(i, hystorique[i])
     return hystorique
 
+## function where the user chose 1 element he want to delete of his history
 def remove(histori):
     while True:
         try:
@@ -72,7 +73,7 @@ def remove(histori):
         except IndexError:
             print("enter the correct index number you want to delete )")
        
-
+## function where the history his entire deleted
 def reset(history):
     print(f"before clear {history}")
     history.clear()
