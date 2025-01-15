@@ -44,10 +44,7 @@ def number(Fl_Int):
                 return number1, number2
                 break
             except ValueError:
-                print("enter an integer")
-
-
-        
+                print("enter an integer")     
 
 ## function who put the entire input in your history  ##
 def history(hystorique, num1, si, num2, res):
@@ -57,7 +54,7 @@ def history(hystorique, num1, si, num2, res):
     print("here is your calculator history")
 
     for i in range(len(hystorique)):
-        print(i, hystorique[i])
+        print(f"index : {i} : {hystorique[i]}")
     return hystorique
 
 ## function where the user chose 1 element he want to delete of his history
@@ -98,11 +95,11 @@ def main():
             if choice1 == "Y":
                 histori = history(historik, num[0], sign, num[1], calcul)
             
-            choice2 = input("do you want to delete an element of your calculator history ? Y/N").upper()
+            choice2 = input("do you want to delete an element of your calculator history ? Y/N : ").upper()
             if choice2 == "Y":
                 remove(histori)
             
-            choice3 = input("do you want to delete all your calculator history ? Y/N").upper()
+            choice3 = input("do you want to delete all your calculator history ? Y/N : ").upper()
             if choice3 == "Y":
                 reset(histori)
             
